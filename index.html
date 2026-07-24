@@ -139,7 +139,7 @@ function renderPost(post) {
     : `<div class="li-avatar-fallback" style="background:${color}">${initials(post.name)}</div>`;
 
   const uid = 'lp_' + Math.random().toString(36).slice(2, 9);
-  const reactions = randInt(60, 620);
+  const reactions = randInt(40, 220);
   const comments = randInt(3, Math.max(4, Math.floor(reactions / 10)));
   const reposts = randInt(1, Math.max(2, Math.floor(reactions / 22)));
   const timestamp = TIMESTAMPS[randInt(0, TIMESTAMPS.length - 1)];
